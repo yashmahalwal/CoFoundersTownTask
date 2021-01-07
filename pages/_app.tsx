@@ -3,7 +3,7 @@ import { ChakraProvider, Fade, Progress } from "@chakra-ui/react";
 import type { AppContext, AppProps } from "next/app";
 import theme from "../components/theme";
 import "../components/global.css";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Header from "../components/Header";
 import App from "next/app";
 import { User } from "../server/Models/user";
@@ -22,6 +22,9 @@ const MyApp = ({
     pageProps,
     viewer,
 }: AppProps & Props): JSX.Element => {
+    useEffect(() => {
+        console.log(process.env);
+    }, []);
     const [routeLoading, setRouteLoading] = useState(false);
 
     Router.events.on("routeChangeStart", () => setRouteLoading(true));
