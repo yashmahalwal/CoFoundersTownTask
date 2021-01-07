@@ -1,14 +1,20 @@
+import Head from "next/head";
 import { NextPage } from "next";
-import { Text } from "@chakra-ui/react";
+import CardContainer from "../components/CardContainer";
+import FullHeightPage from "../components/FullHeightPage";
+import LoginForm from "../components/Login/form";
 const LoginPage: NextPage = () => {
     return (
-        <Text
-            bgGradient="linear(to-l, #7928CA,#FF0080)"
-            bgClip="text"
-            fontSize="6xl"
-            fontWeight="extrabold">
-            Hello World
-        </Text>
+        <>
+            <Head>
+                <title>Login</title>
+            </Head>
+            <FullHeightPage>
+                <CardContainer>
+                    <LoginForm />
+                </CardContainer>
+            </FullHeightPage>
+        </>
     );
 };
 

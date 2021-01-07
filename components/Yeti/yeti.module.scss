@@ -1,0 +1,23 @@
+/* colors */
+$darkBlue: #217093;
+$medBlue: #4eb8dd;
+$lightBlue: #ddf1fa;
+$inputBG: #f3fafd;
+
+.svgContainer {
+  position: relative;
+  width: 200px;
+  border-radius: 50%;
+  div {
+    position: relative;
+    width: 100%;
+    border-radius: 50%;
+  }
+  .mySVG {
+    pointer-events: none;
+    pointer-events: none;
+    box-sizing: border-box;
+    border: solid 2.5px $darkBlue;
+    border-radius: 50%;
+  }
+}
