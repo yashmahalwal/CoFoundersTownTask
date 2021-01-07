@@ -1,15 +1,12 @@
 import {
-    Link as ChakraLink,
     Box,
     Button,
     HStack,
     useDisclosure,
-    toast,
     useToast,
 } from "@chakra-ui/react";
 import { faSearch } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import Link from "next/link";
 import { useRouter } from "next/router";
 import React from "react";
 import { Success } from "../server/api-types";

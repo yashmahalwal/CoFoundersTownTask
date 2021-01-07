@@ -1,7 +1,5 @@
 import { GetServerSideProps } from "next";
 import {
-    Alert,
-    AlertIcon,
     Avatar,
     Box,
     Container,
@@ -15,9 +13,7 @@ import {
 import { NextPage } from "next";
 import { useRouter } from "next/router";
 import React, { useEffect, useState } from "react";
-import { User } from "../../server/Models/user";
 import { UserFetchPayload } from "../../server/users/types";
-import useEffectExceptMount from "use-effect-except-mount";
 import { FetchArticlesPayload } from "../../server/articles/types";
 import { getArticles } from "../../components/Home/getArticles";
 import ArticleList from "../../components/ArticleList";

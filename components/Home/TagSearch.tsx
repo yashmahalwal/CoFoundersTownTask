@@ -2,19 +2,13 @@ import {
     Modal,
     ModalOverlay,
     ModalContent,
-    ModalHeader,
-    ModalCloseButton,
     ModalBody,
-    ModalFooter,
-    Button,
     Spinner,
     VisuallyHidden,
-    toast,
     useToast,
     Box,
-    Center,
 } from "@chakra-ui/react";
-import { faAngleDoubleDown, faSearch } from "@fortawesome/free-solid-svg-icons";
+import { faSearch } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React, { useEffect, useState } from "react";
 import { Articles } from "../../server/Models/article";

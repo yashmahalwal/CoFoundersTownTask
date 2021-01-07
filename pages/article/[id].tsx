@@ -1,13 +1,8 @@
 import { GetServerSideProps } from "next";
 import {
-    Avatar,
-    Box,
     Container,
     Divider,
     Heading,
-    List,
-    ListItem,
-    Stack,
     Tag,
     TagLabel,
     Text,
@@ -16,7 +11,6 @@ import {
     WrapItem,
 } from "@chakra-ui/react";
 import { NextPage } from "next";
-import { useRouter } from "next/router";
 import { Articles } from "../../server/Models/article";
 import { FetchArticlePayload } from "../../server/articles/types";
 import dynamic from "next/dynamic";

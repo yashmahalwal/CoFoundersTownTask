@@ -51,7 +51,6 @@ const handle = app.getRequestHandler();
         } as Record<string, string>);
     });
     server.use("/publish", (req, res) => {
-        console.log(req.context.user);
         if (!req.context.user) return res.redirect("/");
         return app.render(req, res, "/publish");
     });

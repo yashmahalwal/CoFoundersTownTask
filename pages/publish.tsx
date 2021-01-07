@@ -10,7 +10,6 @@ import {
     Center,
     Container,
     IconButton,
-    InputGroup,
     Tag,
     TagCloseButton,
     TagLabel,
@@ -107,10 +106,7 @@ const PublishPage: NextPage = () => {
                 <Controller
                     control={control}
                     name="content"
-                    render={(
-                        { onChange, onBlur, value, name, ref },
-                        { invalid, isTouched, isDirty }
-                    ) => (
+                    render={({ onChange, onBlur, value }, { invalid }) => (
                         <MdEditor
                             name="content"
                             value={value}

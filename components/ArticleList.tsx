@@ -10,7 +10,6 @@ import {
     Text,
     Center,
     Button,
-    list,
     useToast,
     ButtonProps,
 } from "@chakra-ui/react";
