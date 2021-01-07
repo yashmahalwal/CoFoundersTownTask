@@ -32,6 +32,8 @@ export async function createJWTCookie(
 
     res.cookie("token", await tokenPromise, {
         expires: new Date(Date.now() + durationInSec * 1000),
+        httpOnly: true,
+        secure: process.env.NODE_ENV === "production",
     });
 }
 
